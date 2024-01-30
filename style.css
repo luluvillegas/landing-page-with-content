@@ -46,22 +46,28 @@ body {
 
 .left-side-hero {
   margin-right: auto;
-  height: 250px;
+  height: auto;
   padding-right: 40px;
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
 }
 
 .right-side-hero {
   margin-left: auto;
   background-color: #6d747d;
-  height: 250px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-basis: 50%;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
