@@ -27,12 +27,14 @@ body {
   margin-left: auto;
 }
 
-.header a {
-  text-decoration: none;
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
 }
 
-.header a,
-.hero p {
+.header-links {
+  text-decoration: none;
   color: #e5e7eb;
   font-size: 18px;
 }
@@ -42,6 +44,13 @@ body {
   padding: 100px 250px;
   display: flex;
   justify-content: space-between;
+}
+
+.hero p {
+  color: #e5e7eb;
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.5;
 }
 
 .left-side-hero {
@@ -77,11 +86,6 @@ body {
   max-width: 400px;
 }
 
-.hero p {
-  max-width: 600px;
-  line-height: 1.5;
-}
-
 .sign-up-button {
   color: #f9faf8;
   background-color: #3882f6;
@@ -90,12 +94,6 @@ body {
   height: 36px;
   border: none;
   border-radius: 7px;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
 }
 
 .information {
@@ -109,25 +107,11 @@ ul {
   text-align: center;
 }
 
-.card-image {
-  height: 170px;
-  width: 170px;
-  border: 4px solid #3882f6;
-  border-radius: 12px;
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 7px;
-}
-
-.card-text {
-  color: #1f2937;
-}
-
-.card-text-link {
-  color: #1f2937;
+.cards-layout {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 70px;
 }
 
 .card {
@@ -138,11 +122,22 @@ ul {
   gap: 10px;
 }
 
-.cards-layout {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  margin-top: 70px;
+.card-image-container {
+  height: 170px;
+  width: 170px;
+  border: 4px solid #3882f6;
+  border-radius: 12px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.card-text,
+.card-text-link {
+  color: #1f2937;
 }
 
 .review {
